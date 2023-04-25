@@ -29,7 +29,7 @@ function Register() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label>
+      <label className="m-3">
         Username:
         <input
           type="text"
@@ -48,7 +48,7 @@ function Register() {
         />
       </label>
       <br />
-
+    <p>{errMsg}</p>
       <button type="submit">Register</button>
     </form>
   );
