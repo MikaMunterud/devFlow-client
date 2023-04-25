@@ -6,6 +6,7 @@ import MyNavbar from "./components/Navbar";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import Home from "./components/Home";
+import Createpost from "./components/Createpost";
 
 function App() {
   axios.defaults.withCredentials = true;
@@ -20,7 +21,9 @@ function App() {
         <Routes>
           <Route path="/login" element={<Login />} />
         </Routes>
-
+        <Routes>
+          <Route path="/createpost" element={<Createpost />} />
+        </Routes>
         <Routes>
           <Route path="/register" element={<Register />} />
         </Routes>
