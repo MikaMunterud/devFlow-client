@@ -4,7 +4,7 @@ import axios from "axios"
 
 
 
-const Createpost = (props) => {
+const Createpost = () => {
 
     const [post, setPost] = useState("")
 
@@ -17,12 +17,7 @@ const addPost = () => {
 
         setPost("")
        console.log(res)
-       return axios.get("http://localhost:4000/getposts%22")
-       .then((res) => {
-        props.setPosts(res.data)
-       })
-
-
+    
 
     }).catch((err) => {
         console.log(err)
