@@ -30,7 +30,7 @@ function Login() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label>
+      <label className="m-3">
         Username:
         <input
           type="text"
@@ -49,7 +49,7 @@ function Login() {
         />
       </label>
       <br />
-
+    <p>{errMsg}</p>
       <button type="submit">Login</button>
     </form>
   );

@@ -39,6 +39,7 @@ const addPost = () => {
 
   className="w-[200px] mt-2"
   variant="outlined" label="Post"/>
+  <br/>
   <Button
   onClick={addPost}
   style={{backgroundColor: "#1877f2"}}

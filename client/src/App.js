@@ -7,6 +7,7 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import Home from "./components/Home";
 import Createpost from "./components/Createpost";
+import SingleFeed from "./components/SingleFeed";
 
 function App() {
   axios.defaults.withCredentials = true;
@@ -17,15 +18,14 @@ function App() {
         <MyNavbar />
         <Routes>
           <Route path="/" element={<Home />} />
-        </Routes>
-        <Routes>
+       
           <Route path="/login" element={<Login />} />
-        </Routes>
-        <Routes>
+       
           <Route path="/createpost" element={<Createpost />} />
-        </Routes>
-        <Routes>
+        
           <Route path="/register" element={<Register />} />
+      
+        <Route path="/feed/:id" element={<SingleFeed/>}/>
         </Routes>
       </BrowserRouter>
     </div>
